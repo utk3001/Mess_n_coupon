@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Canteen</title>
+
+    <link rel="stylesheet" href="/Mess_N_Canteen/public/css/menu.css">
+</head>
+
+<body>
+    <h1><a href="index.html" class="hLink">Mess and Canteen Booking</a></h1>
+    <div class="navbar">
+        <div><a href="main-canteen.html" class="navitem">Main Canteen</a></div>
+        <div><a href="kerala.html" class="navitem">Kerala Canteen</a></div>
+        <div><a href="hotspot.html" class="navitem">Hotspot</a></div>
+        <div><a href="coffee-day.html" class="navitem">Coffee day</a></div>
+        <div><a href="shake.html" class="navitem">Shakes & Juice</a></div>
+        <div><a href="mess.html" class="navitem">Mess</a></div>
+        <div class="cart-grow">
+            <div><a href="cart.html" class="navitem cart-align">Cart</a></div>
+            <!-- logo -->
+        </div>
+        <div class="drop-down">
+            <div><a href="login.html" class="navitem">Login</a></div>
+            <!-- logo -->
+        </div>
+    </div>
+    <div class="slide-back">
+        <p class="sub-heading">Main Canteen</p>
+        <img src="/Mess_N_Canteen/public/img/north_indian.jpg" alt="">
+    </div>
+    <div class="menu">
+        <div class="menu-items">
+            <h2>Menu</h2>
+            <div class="list">
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Breakfast</div>
+                            <div class="Desc">from 7:30am to 9:15am</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div class="Rate">45</div>
+                            <div class="Quant">
+                                <button class="inc-dec" onclick="decrement(0)">-</button>
+                                <output class="Quant-out" id="out"></output>
+                                <button class="inc-dec" onclick="increment(0)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Lunch</div>
+                            <div class="Desc">from 12:15pm to 2:00pm</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div class="Rate">55</div>
+                            <div class="Quant">
+                                <button class="inc-dec" onclick="decrement(1)">-</button>
+                                <output class="Quant-out"></output>
+                                <button class="inc-dec" onclick="increment(1)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Dinner</div>
+                            <div class="Desc">from 7:30pm to 9:00pm</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div class="Rate">65</div>
+                            <div class="Quant">
+                                <button class="inc-dec" onclick="decrement(2)">-</button>
+                                <output class="Quant-out"></output>
+                                <button class="inc-dec" onclick="increment(2)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Combo</div>
+                            <div class="Desc">Breakfast+Lunch+Dinner</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div class="Rate">130</div>
+                            <div class="Quant">
+                                <button class="inc-dec" onclick="decrement(3)">-</button>
+                                <output class="Quant-out"></output>
+                                <button class="inc-dec" onclick="increment(3)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Total</div>
+                            <div class="Desc">To pay</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div id="Total">xxxxx</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-div">
+            <button onclick="window.location.href='/Mess_N_Canteen/public/cart.html'" class="navitem">View Cart</button>
+        </div>
+    </div>
+    <div class="contact-us">
+        <div>Facing any difficulties </div>
+        <div>Contact us: </div>
+        <div>+91-8178457162 </div>
+        <div>utkarsh.2002a@gmail.com</div>
+    </div>
+    <script src="/Mess_N_Canteen/public/js/inc-dec.js"></script>
+</body>
+
+</html>

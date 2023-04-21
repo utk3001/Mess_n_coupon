@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Canteen</title>
+
+    <link rel="stylesheet" href="/Mess_N_Canteen/public/css/cart.css">
+</head>
+
+<body>
+    <h1><a href="index.html" class="hLink">Mess and Canteen Booking</a></h1>
+    <div class="navbar">
+        <div><a href="main-canteen.html" class="navitem">Main Canteen</a></div>
+        <div><a href="kerala.html" class="navitem">Kerala Canteen</a></div>
+        <div><a href="hotspot.html" class="navitem">Hotspot</a></div>
+        <div><a href="coffee-day.html" class="navitem">Coffee day</a></div>
+        <div><a href="shake.html" class="navitem">Shakes & Juice</a></div>
+        <div><a href="mess.html" class="navitem">Mess</a></div>
+        <div class="drop-down">
+            <div><a href="login.html" class="navitem">Login</a></div>
+            <!-- logo -->
+        </div>
+    </div>
+    <div class="slide-back">
+        <div class="sub-heading">Cart</div>
+    </div>
+    <div class="menu">
+        <div class="menu-items">
+            <h2>name of Place that recieved order</h2>
+            <div class="list">
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Tea</div>
+                            <div class="Desc">A hot drink</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div class="Rate">9.00</div>
+                            <div class="Quant">
+                                <button class="inc-dec" onclick="decrement(0)">-</button>
+                                <output class="Quant-out">0</output>
+                                <button class="inc-dec" onclick="increment(0)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Tea</div>
+                            <div class="Desc">A hot drink</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div class="Rate">9.00</div>
+                            <div class="Quant">
+                                <button class="inc-dec" onclick="decrement(0)">-</button>
+                                <output class="Quant-out">0</output>
+                                <button class="inc-dec" onclick="increment(0)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Tea</div>
+                            <div class="Desc">A hot drink</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div class="Rate">9.00</div>
+                            <div class="Quant">
+                                <button class="inc-dec" onclick="decrement(0)">-</button>
+                                <output class="Quant-out">0</output>
+                                <button class="inc-dec" onclick="increment(0)">+</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="list-item">
+                    <div class="flex-list">
+                        <div class="flex-name-desc">
+                            <div class="Name">Total</div>
+                            <div class="Desc">To pay</div>
+                        </div>
+                        <div class="flex-rate-quant">
+                            <div class="Rs">Rs</div>
+                            <div id="Total"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="btn-div">
+            <button onclick="window.location.href='/Mess_N_Canteen/public/index.html'" class="navitem" id="cancel">Cancel</button>
+            <button onclick="window.location.href='/Mess_N_Canteen/public/index.html'" class="navitem" id="pay">Pay</button>
+        </div>
+    </div>
+    <div class="contact-us">
+        <div>Facing any difficulties </div>
+        <div>Contact us: </div>
+        <div>+91-8178457162 </div>
+        <div>utkarsh.2002a@gmail.com</div>
+    </div>
+    <script src="/Mess_N_Canteen/public/js/inc-dec.js"></script>
+</body>
+
+</html>
